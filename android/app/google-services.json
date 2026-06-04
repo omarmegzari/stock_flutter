@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "957589231832",
+    "firebase_url": "https://stock-saas-abb28-default-rtdb.firebaseio.com",
+    "project_id": "stock-saas-abb28",
+    "storage_bucket": "stock-saas-abb28.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957589231832:android:a1d7958c1d5832c3a6dfad",
+        "android_client_info": {
+          "package_name": "com.omarmegzari.stock_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs1m7Z9gT7T7GvPu-ahvPDG5B8ROMKz7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
