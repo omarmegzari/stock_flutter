@@ -101,6 +101,7 @@ class MouvementsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    ref.watch(productsStreamProvider); // Garder les produits en mémoire pour le bouton "+"
     final mouvementsAsync = ref.watch(mouvementsStreamProvider);
 
     return Scaffold(
