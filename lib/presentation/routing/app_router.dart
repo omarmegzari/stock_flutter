@@ -6,6 +6,7 @@ import '../screens/login_screen.dart';
 import '../screens/dashboard_screen.dart';
 import '../screens/products_screen.dart';
 import '../screens/categories_screen.dart';
+import '../screens/mouvements_screen.dart';
 import '../screens/main_layout.dart';
 import '../../application/providers/auth_provider.dart';
 
@@ -50,6 +51,10 @@ GoRouter appRouter(Ref ref) {
           GoRoute(
             path: '/categories',
             builder: (context, state) => const CategoriesScreen(),
+          ),
+          GoRoute(
+            path: '/mouvements',
+            builder: (context, state) => const MouvementsScreen(),
           ),
         ],
       ),

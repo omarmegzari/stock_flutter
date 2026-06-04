@@ -16,6 +16,7 @@ class MainLayout extends ConsumerWidget {
     if (location.startsWith('/dashboard')) currentIndex = 0;
     if (location.startsWith('/products')) currentIndex = 1;
     if (location.startsWith('/categories')) currentIndex = 2;
+    if (location.startsWith('/mouvements')) currentIndex = 3;
 
     return Scaffold(
       appBar: AppBar(
@@ -43,8 +44,12 @@ class MainLayout extends ConsumerWidget {
             case 2:
               context.go('/categories');
               break;
+            case 3:
+              context.go('/mouvements');
+              break;
           }
         },
+        type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.dashboard),
@@ -57,6 +62,10 @@ class MainLayout extends ConsumerWidget {
           BottomNavigationBarItem(
             icon: Icon(Icons.folder),
             label: 'Catégories',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.swap_horiz),
+            label: 'Mouvements',
           ),
         ],
       ),
